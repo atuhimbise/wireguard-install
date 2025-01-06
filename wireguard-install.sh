@@ -118,7 +118,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/root
-ExecStart=/usr/bin/udpServer -ip=$ip -net=$interface -mode=system
+ExecStart=/usr/bin/udpServer -ip=$ip -net=$interface -mode=system -port=5353
 Restart=always
 RestartSec=3s
 
